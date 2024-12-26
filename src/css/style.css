@@ -1,0 +1,87 @@
+
+
+@font-face {
+       font-family: 'Integral CF';
+       src: url('../fonts/Fontspring-DEMO-integralcf-bold.otf') format('woff2');
+       src: url('../fonts/Fontspring-DEMO-integralcf-extrabold.otf'),
+              url('../fonts/Fontspring-DEMO-integralcf-extraboldoblique.otf'),
+              url('../fonts/Fontspring-DEMO-integralcf-regular.otf'),
+              url('../fonts/Fontspring-DEMO-integralcf-medium.otf');
+       font-weight: 700; 
+       font-style: normal;
+}
+@font-face {
+       font-family: 'Santoshi';
+       src: url('../fonts/Satoshi-Regular.otf') format('woff2');
+       src: url('../fonts/Satoshi-Black.otf'),
+              url('../fonts/Satoshi-Bold.otf'),
+              url('../fonts/Satoshi-Light.otf'),
+              url('../fonts/Satoshi-Medium.otf'),
+              url('../fonts/Satoshi-Italic.otf');
+       font-weight: 400; 
+       font-style: normal;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+       @apply m-0 p-0;
+}
+body{
+       @apply font-santoshi font-normal  text-[16px] box-border list-none no-underline;
+}
+html,body{
+       overflow-x: hidden
+}
+h1,h2,h3,h4,h5,h6{
+       @apply font-Integral font-bold text-[36px];
+}
+h1{
+       @apply text-[64px] text-black leading-[64px] text-left
+}
+h2{
+       @apply text-[48px] text-black font-extrabold
+}
+h4{
+       @apply text-[15px] text-black font-bold font-santoshi
+}
+.logo span{
+       @apply text-[32px] font-extrabold font-Integral text-black uppercase block mb-[5px]
+}
+p{
+       @apply text-black-60 leading-[22px] font-[500]
+}
+.btn{
+       @apply z-10 px-[68px] py-[15px] bg-black text-white text-[16px] inline-block rounded-[30px] transition duration-500;
+}
+
+.btn:hover{
+       @apply bg-white text-black-60 shadow-sm
+}
+nav ul li a i{
+       @apply relative;
+}
+nav ul li a i::before {
+       @apply transform transition duration-300 absolute content-[''];
+}
+nav ul li a:hover i::before {
+       @apply rotate-180;
+}
+.activeCarousel .owl-item span.active{
+       @apply opacity-100;
+}
+
+/* arrival styling */
+#hover-with-show-another-imge{
+       @apply relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black-40 after:content-[''] after:transform after:scale-100 after:duration-300 after:rounded-[30px] after:transition-transform;
+}
+#single-item:hover #hover-with-show-another-imge::after{
+       @apply scale-0;
+}
+/* #search-box-wrap{
+       @apply max-w-xl
+}
+#search-box-wrap > i{
+       @apply absolute top-1/2 left-4 text-black-40 cursor-pointer w-[40px] h-auto -translate-y-[50%] rounded-tl-[30px] rounded-bl-[30px] text-[20px];
+} */

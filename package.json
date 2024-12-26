@@ -1,0 +1,24 @@
+{
+  "name": "my-second-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/style.css -o ./src/output/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevloperTarek/my-second-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevloperTarek/my-second-portfolio/issues"
+  },
+  "homepage": "https://github.com/DevloperTarek/my-second-portfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

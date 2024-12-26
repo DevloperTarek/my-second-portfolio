@@ -1,1 +1,339 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>-Ecommerce Site With Tailwind-</title>
+       <!-- fav-icon -->
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+       <!-- remix-icon -->
+       <link rel="stylesheet" href="./css/remixicon.css">
+       <!-- owl carousel -->
+       <link rel="stylesheet" href="./css/owl.carousel-2.3.4.min.css">
+       <link rel="stylesheet" href="./css/owl.theme.default-2.3.4.min.css">
+       <!-- render css files -->
+       <link rel="stylesheet" href="./output/output.css">
+</head>
+<body>
+       <!-- preloader -->
+       <div class="preloader">
+              <div class="loader"></div>
+       </div>
+       <!-- header-top -->
+       <div class="bg-black py-[10px] text-center text-white text-[14px]">Sign up and get 20% off to your first order.<a href="signup.html" class="text-white cursor-pointer relative after:absolute after:-bottom-[1px] after:left-0 after:w-full after:h-[1px] after:bg-white after:content-['']">Sign Up Now</a></div>
+       <!-- main header -->
+       <div class="container">
+              <header class="main-header flex items-center gap-[40px] flex-wrap flex-shrink-0 justify-between py-[24px]">
+                     <!-- logo area -->
+                     <div class="logo"><span>SHOP.CO</span></div>
+                     <!-- menu item area -->
+                     <nav>
+                            <ul class="flex items-center gap-[24px]">
+                                   <!-- Shop Item with Group Hover -->
+                                   <li class="relative group">
+                                          <a href="shop.html" class="font-normal font-santoshi block py-[13px] transition-all duration-300 hover:text-black-60">
+                                          Shop
+                                          <i class="ri-arrow-down-s-line text-[16px]"></i>
+                                          </a>
+                                          <ul class="group-hover:block hidden after:duration-500 after:absolute after:-z-10 after:-top-1 after:left-2 after:w-[40px] after:h-[40px] after:transform after:rotate-[130deg] after:bg-slate-500 dropdown-menu absolute top-full left-0 w-[250px] p-4 border-b-2 border-b-black bg-slate-500 rounded-sm">
+                                                 <li class="mb-2 transition-all duration-300 hover:pl-2 hover:text-white"><a href="#">Product categrory</a></li>
+                                                 <li class="mb-2 transition-all duration-300 hover:pl-2 hover:text-white"><a href="#">Product details</a></li>
+                                                 <li class="transition-all duration-300 hover:pl-2 hover:text-white"><a href="#">Cart</a></li>
+                                          </ul>
+                                   </li>
+                                   
+                                   <!-- On Sale Item -->
+                                   <li>
+                                     <a href="sale.html" class="font-normal font-santoshi block py-[13px] transition-all duration-300 hover:text-black-60">
+                                       On Sale
+                                     </a>
+                                   </li>
+                                   
+                                   <!-- New Arrivals Item -->
+                                   <li>
+                                     <a href="arrivel.html" class="font-normal font-santoshi block py-[13px] transition-all duration-300 hover:text-black-60">
+                                       New Arrivals
+                                     </a>
+                                   </li>
+                                   
+                                   <!-- Brands Item -->
+                                   <li>
+                                     <a href="brand.html" class="font-normal font-santoshi block py-[13px] transition-all duration-300 hover:text-black-60">
+                                       Brands
+                                     </a>
+                                   </li>
+                                 </ul>
+                                 
+                                 
+                     </nav>
+                     <!-- search bar -->
+                     <div class="relative flex items-center bg-search-bar-bg rounded-full max-w-lg w-full px-4 py-3">
+                            <!-- Search Icon -->
+                            <div class="absolute">
+                                   <i class="ri-search-line text-[20px] text-black-40 cursor-pointer"></i>
+                            </div>
+                     
+                            <!-- Input Field -->
+                            <form action="contact.html">
+                                   <input
+                                   type="text"
+                                   placeholder="Search for products..."
+                                   class=" bg-search-bar-bg relative w-full ml-[30px] text-sm text-gray-600 bg-transparent focus:outline-none"
+                                   />
+                            </form>
+                     </div>
+                     <!-- card area -->
+                     <div class="text-r flex items-center gap-[14px]">
+                            <i class="ri-shopping-cart-line text-[24px] w-[50px] h-[50px] bg-search-bar-bg roounded-full opacity-90 text-center rounded-full leading-[50px] cursor-pointer transition-all duration-300 hover:text-black-40"></i>
+                            <i class="ri-user-line text-[24px] w-[50px] h-[50px] bg-search-bar-bg roounded-full opacity-90 text-center rounded-full leading-[50px] cursor-pointer transition-all duration-300 hover:text-black-40"></i>
+                     </div>
+              </header>
+       </div>
+       <hr class="border-b border-b-[#9A9A9A]"/>
+       <!-- hero area -->
+       <section class="bg-banner-bg">
+              <div class="container flex-row md:items-center md:justify-between md:relative relative">
+                     <!-- shape 1 -->
+                     <div class="absolute top-[50%] right-[45%] z-10 cursor-pointer">
+                            <img src="./img/hero/shape-1.png" alt="shape-1">
+                     </div>
+                     <!-- shape 2 -->
+                     <div class="absolute top-[86px] right-0 z-10 cursor-pointer">
+                            <img src="./img/hero/shape-2.png" alt="shape-2">
+                     </div>
+                     <div class="py-[100px] max-w-[577px]">
+                            <h1>FIND CLOTHES <br> THAT MATCHES <br>YOUR STYLE</h1>
+                            <p class="my-8">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                            <a href="shop.html" class="btn mb-[48px]">Shop Now</a>
+                            <div class="counter-area py-[10px] grid lg:grid-cols-3 grid-cols-1 space-x-[30px] text-center">
+                                   <div class="single-counter font-[700] text-[40px] font-santoshi text-black py-[10px] static lg:relative border-0  lg:border-r border-r-black-10 after:top-0 after:right-0 after:w-[1px] after:h-full after:bg-[#ddd] lg:after:absolute ">
+                                          <span class="counter">2000</span>+
+                                          <p class="text-black-60 text-[15px] leading-[22px] font-[400]">International Brands</p>
+                                   </div>
+                                   <div class="single-counter font-[700] text-[40px] font-santoshi text-black py-[10px] static lg:relative lg:border-r lg:border-r-black-10 lg:-mr-[30px] after:top-0 after:right-0 after:w-[1px] after:h-full after:bg-[#ddd] lg:after:absolute" style="margin-right: -30px;">
+                                          <span class="counter">200</span>+
+                                          <p class="text-black-60 text-[15px] ml-0 leading-[22px] font-[400]">International Brands</p>
+                                   </div>
+                                   <div class="single-counter font-[700] text-[40px] font-santoshi text-black py-[10px]" style="padding-left: 30px;">
+                                          <span class="counter">30,000</span>+
+                                          <p class="text-black-60 text-[15px] leading-[22px] font-[400] lg:flex flex-shrink-0">Happy Customers</p>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="hero-carousel">
+                            <div class="bg-transparent lg:absolute lg:bottom-0 lg:right-0 object-cover static">
+                                   <img src="./img/hero-tranparent.png" class="lg:min-h-[670px] min-h-[470px]" alt="hero-carousel-1">
+                            </div>
+                            <!-- <div>
+                                   <img src="./img/hero-tranparent.png" alt="hero-carousel-1">
+                            </div>
+                            <div>
+                                   <img src="./img/hero-tranparent.png" alt="hero-carousel-1">
+                            </div> -->
+                     </div>
+              </div>
+       </section>
+       <!-- hero area -->
+       <!-- brands section -->
+       <section class="bg-black py-[44px]">
+              <div class="container activeCarousel owl-carousel">
+                     <span class="active block opacity-20 duration-300 transition-opacity hover:opacity-100 cursor-pointer"><img src="./img/brands/brand-1.svg" class="h-[36px]" alt="brnad logo"></span>
+                     <span class="block opacity-20 duration-300 transition-opacity hover:opacity-100 cursor-pointer"><img src="./img/brands/brand-2.svg" class="h-[36px]" alt="brnad logo"></span>
+                     <span class="block opacity-20 duration-300 transition-opacity hover:opacity-100 cursor-pointer"><img src="./img/brands/brand-3.svg" class="h-[36px]" alt="brnad logo"></span>
+                     <span class="block opacity-20 duration-300 transition-opacity hover:opacity-100 cursor-pointer"><img src="./img/brands/brand-4.svg" class="h-[36px]" alt="brnad logo"></span>
+                     <span class="block opacity-20 duration-300 transition-opacity hover:opacity-100 cursor-pointer"><img src="./img/brands/brand-5.svg" class="h-[36px]" alt="brnad logo"></span>
+              </div>
+       </section>
+       <!-- brands section -->
+       <!-- new Arrival -->
+       <section class="new-arrival py-[72px]">
+              <div class="text-center mb-[55px]">
+                     <h2>NEW ARRIVALS</h2>
+              </div>
+              <div class="container grid grid-cols-3 gap-[20px]">
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              <!-- view btn -->
+              <div class="text-center mt-[36px]">
+                     <a href="#" class=" rounded-[30px] inline-block bg-transparent text-black px-[80px] py-[15px] border border-black-10 transition duration-300 text-[16px] font-medium hover:bg-black hover:text-white">View All</a>
+              </div>
+       </section>
+       <hr class="bg-black-10">
+       <!-- new Arrival -->
+       <!-- selling -->
+       <section class="selling py-[72px]">
+              <div class="text-center mb-[55px]">
+                     <h2>top selling</h2>
+              </div>
+              <div class="container grid grid-cols-4 gap-[20px]">
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+                     <!-- single item -->
+                     <div class="shadow-lg shadow-[#ddd] p-6 rounded-[30px] cursor-pointer" id="single-item">
+                            <div class="bg-arrival-product-bg rounded-[30px] p-[40px]" id="hover-with-show-another-imge">
+                                   <img src="./img/arrivals/t-shirt-1.png" class="w-full" alt="arrival product img">
+                            </div>
+                            <div class="shadow-sm p-4 rounded-br-[30px] rounded-bl-[30px]">
+                                   <h4 class="mb-2">TSHIRT WITH TAPE DETAILS</h4>
+                                   <div class="flex items-center gap-[13px] mb-[8px]">
+                                          <div class="flex items-center inline-block">
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-line text-star-icon-color"></i>
+                                                 <i class="ri-star-half-s-fill text-star-icon-color"></i>
+                                          </div>
+                                          <span class="text-black-60 font-santoshi text-[14px]">3.5/5</span>
+                                   </div>
+                                   <div>
+                                          <span class="flex items-center text-[24px] font-bold gap-[10px]">$240 <del class="text-black-40">$260</del><p class="px-[12px] py-[6px] text-[#FF3333] rounded-[30px] text-[12px] font-santoshi font-medium bg-arrival-offer-text">-20%</p></span>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              <!-- view btn -->
+              <div class="text-center mt-[36px]">
+                     <a href="#" class=" rounded-[30px] inline-block bg-transparent text-black px-[80px] py-[15px] border border-black-10 transition duration-300 text-[16px] font-medium hover:bg-black hover:text-white">View All</a>
+              </div>
+       </section>
+       <!-- selling -->
+       <!-- jquery files -->
+       <script src="./js/jquery-3.6.0.min.js"></script>
+       <!-- owl carousel -->
+       <script src="./js/owl.carousel-v2.3.4.min.js"></script>
+       <!-- counter up -->
+       <script src="./js/jquery.counterup-1.0.min.js"></script>
+       <script src="./js/jquery.waypoints-4.00.min.js"></script>
+       <!-- jquery all event added this js file -->
+       <script src="./js/jquery-all-event.js"></script>
+</body>
+</html>
