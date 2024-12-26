@@ -33,10 +33,13 @@ module.exports = {
         'banner-bg':'#F2F0F1',
         'arrival-product-bg':'#F0EEED',
         'star-icon-color':'#FFC633',
-        'arrival-offer-text':'rgba(255, 51, 51, 0.1)'
+        'arrival-offer-text':'rgba(255, 51, 51, 0.1)',
+        'mashonary-area-bg':'#F0F0F0',
       },
       backgroundImage:{
         'custom-bg-img':"url('../img/arrivals/t-shirt-2.webp')",
+        'mashonary-1-bg':"url('../img/arrivals/t-shirt-1.png')",
+        
       }
     },
   },

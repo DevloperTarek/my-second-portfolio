@@ -50,7 +50,7 @@ h4{
        @apply text-[32px] font-extrabold font-Integral text-black uppercase block mb-[5px]
 }
 p{
-       @apply text-black-60 leading-[22px] font-[500]
+       @apply text-black-60 leading-[22px] font-[500] text-[16px]
 }
 .btn{
        @apply z-10 px-[68px] py-[15px] bg-black text-white text-[16px] inline-block rounded-[30px] transition duration-500;
@@ -78,6 +78,35 @@ nav ul li a:hover i::before {
 }
 #single-item:hover #hover-with-show-another-imge::after{
        @apply scale-0;
+}
+/* mashonary area */
+.grid-item{
+       @apply h-[289px] w-[327px] bg-white rounded-[30px] cursor-pointer shadow-sm relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black-10 after:rounded-[30px] after:opacity-0 after:transform after:scale-75 after:transition-transform after:content-[''] hover:after:scale-100 hover:after:opacity-100;
+}
+.long-grid-item{
+       @apply w-[600px] bg-white rounded-[30px];
+}
+/* mashonary btn design */
+.customer-carousel-active .owl-nav button i {
+       @apply text-[34px] w-[50px] h-[50px] bg-black text-white p-[10px] mx-[10px] opacity-30 transition transition-opacity duration-300;
+}
+.customer-carousel-active .owl-nav button i:hover{
+       @apply text-[34px] w-[50px] h-[50px] bg-black text-white p-[10px] mx-[10px] opacity-100;
+}
+.customer-carousel-active .owl-nav{
+       @apply absolute -top-[90px] right-0
+}
+.customer-carousel-active .owl-stage-outer {
+       @apply overflow-visible
+}
+#single-item{
+       @apply transition duration-500;
+}
+#single-item:hover{
+       @apply shadow-sm shadow-black-40 bg-black text-white;
+}
+#single-item:hover i,#single-item:hover h4,#single-item:hover p{
+       @apply text-white
 }
 /* #search-box-wrap{
        @apply max-w-xl
